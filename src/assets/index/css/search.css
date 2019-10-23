@@ -1,0 +1,33 @@
+.wrap {
+  height: 0.81rem;
+  padding-top: 0.65rem;
+  background: url("../images/banner-top.png");
+  background-size: 100%;
+}
+.wrap img {
+  width: 100%;
+}
+.wrap .input {
+  position: relative;
+  width: 5.16rem;
+  margin: 0 auto;
+}
+.wrap .input input {
+  display: block;
+  width: 5.16rem;
+  height: 0.62rem;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  background: url("../images/search-input.png") no-repeat;
+  background-size: 100%;
+  text-indent: 1em;
+  font-size: 0.2812rem;
+  color: #333;
+}
+.wrap .input img {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.22rem;
+  width: 0.37rem;
+}

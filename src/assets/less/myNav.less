@@ -1,0 +1,54 @@
+@color:#fb9b00;
+.nav{
+  position: fixed;
+  left:auto;
+  bottom:0;
+  display: flex;
+  justify-content: space-between;
+  width:7.5rem-0.4;
+  height:1.01rem;
+  padding:0 0.2rem;
+  border-top: 0.02rem solid #eee;
+  background: white;
+  a{
+    width:1.4rem;
+    display: block;
+    div{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height:1.01rem;
+      div{
+        width:0.45rem;
+        height:0.45rem;
+        background: url("../images/sprite.png");
+        background-size: 0.9rem 1.8rem;
+      }
+      .nav-class{
+        background-position-y: -0.45rem;
+      }
+      .nav-car{
+        background-position-y: -0.9rem;
+      }
+      .nav-me{
+        background-position-y: -1.35rem;
+      }
+      p{
+        font-size: 0.2344rem;
+        color:#333;
+      }
+    }
+  }
+  .router-link-active{
+    div{
+      div{
+        background-position-x: -0.45rem;
+      }
+      p{
+        color:@color;
+      }
+    }
+  }
+}

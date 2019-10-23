@@ -1,0 +1,14 @@
+.title {
+  display: flex;
+  height: 0.93rem;
+  line-height: 0.93rem;
+}
+.title .logo {
+  width: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.title h2 {
+  font-size: 0.2813rem;
+  color: #333;
+}
