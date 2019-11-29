@@ -28,10 +28,6 @@ export default new Router({
       component:detail,
     },
     {
-      path:'/shopping-cart',
-      component:shopCar,
-    },
-    {
       path:"/main-content",
       component:mainContent,
       children:[
@@ -54,8 +50,8 @@ export default new Router({
           ]
         },
         {
-          path: 'car',
-          component: index
+          path: 'shopping-cart',
+          component: shopCar
         },
         {
           path: 'me',

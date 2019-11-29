@@ -9,7 +9,7 @@
       <div class="input">
         <span>密码：</span><input type="text" v-model="password">
       </div>
-      <my-button :btnName="'登录'" :routerName="'main-content'"></my-button>
+      <my-button :btnName="'登录'" :routerName="'main-content'" @click="finishLog"></my-button>
     </div>
   </div>
 </template>
@@ -28,6 +28,15 @@
     methods:{
       active(routerName){
         this.$router.push(routerName)
+      },
+      finishLog(){
+        this.$http({
+          url:"http://yd.msword.top/login",
+          method:'post',
+          params:{phone:this.phone,password:this.password}
+        }).then(res=>{
+          console.log(res);
+        })
       }
     },
     components:{

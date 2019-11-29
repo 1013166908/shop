@@ -13,7 +13,7 @@
       <p>购买数量</p>
       <div>
         <button @click="sub">-</button>
-        <p>{{num}}</p>
+        <p id="add_count">{{num}}</p>
         <button @click="add">+</button>
       </div>
     </div>

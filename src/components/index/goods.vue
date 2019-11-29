@@ -14,8 +14,8 @@
         <div class="bottom">
           <p class="name">{{item.name}}</p>
           <p>
-            <span class="now">{{item.reduct_price}}</span>
-            <span class="before">{{item.original_price}}</span>
+            <span class="now">￥{{item.reduct_price}}</span>
+            <span class="before">￥{{item.original_price}}</span>
           </p>
         </div>
       </li>
@@ -28,7 +28,7 @@
     name:"goods",
     methods:{
       toDetail(id){
-        console.log(id);
+//        console.log(id);
         this.$router.push({
           path:"/detail/"+id,
         })

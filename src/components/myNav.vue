@@ -12,7 +12,7 @@
           <p>分类</p>
         </div>
       </router-link>
-      <router-link to="/main-content/car">
+      <router-link to="/main-content/shopping-cart">
         <div>
           <div class="nav-car"></div>
           <p>购物车</p>

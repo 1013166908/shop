@@ -22,7 +22,7 @@
       this.$http({
         url:"http://yd.msword.top/getClassify"
       }).then(res=>{
-        console.log(res.data);
+//        console.log(res.data);
         this.goodsListAll=res.data.data;
       })
     }

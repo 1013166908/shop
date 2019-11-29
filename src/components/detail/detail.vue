@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <to-car :price="goods.reduct_price"></to-car>
+    <to-car :id="goods.pid" :price="goods.reduct_price"></to-car>
   </div>
 </template>
 
@@ -87,7 +87,7 @@
         }
       }).then(res=>{
         this.goods=res.data.data;
-        console.log(this.goods);
+//        console.log(this.goods);
       })
     }
   }

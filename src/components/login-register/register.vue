@@ -11,7 +11,7 @@
       <div class="input">
         <span>验证码：</span><input type="text" v-model="code">
       </div>
-      <my-button :btnName="'下一步'" :routerName="'login'"></my-button>
+      <my-button :btnName="'下一步'" :routerName="'login'" @click="finishReg"></my-button>
     </div>
 
     <!--<div @click="active('login')" style="background: orange">下一步</div>-->
@@ -33,6 +33,15 @@
     methods:{
       active(routerName){
         this.$router.push(routerName)
+      },
+      finishReg(){
+        this.$http({
+          url:"http://yd.msword.top/register",
+          method:'post',
+          params:{phone:this.phone,password:this.password}
+        }).then(res=>{
+          console.log(res);
+        })
       }
     },
     components:{

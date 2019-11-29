@@ -6,6 +6,8 @@ import router from './router'
 import store from './store'
 var Less = require('Less');
 import axios from 'axios'
+// axios全局配置，允许跨域带cookie
+axios.defaults.withCredentials = true;
 Vue.prototype.$http=axios
 Vue.config.productionTip = false
 
